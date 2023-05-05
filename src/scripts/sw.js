@@ -1,3 +1,5 @@
+// Berkas ini bisa dihapus karena sudah berhasil mengimplementasikan workbox dengan webpack.
+
 import "regenerator-runtime";
 import CacheHelper from "./utils/cache-helper";
 

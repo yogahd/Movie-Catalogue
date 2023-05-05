@@ -1,3 +1,5 @@
+// Berkas ini bisa dihapus karena sudah berhasil mengimplementasikan workbox dengan webpack.
+
 import CONFIG from "../globals/config";
 
 const CacheHelper = {
