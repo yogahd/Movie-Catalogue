@@ -8,6 +8,15 @@ self.addEventListener("install", () => {
   self.skipWaiting();
 });
 
-self.addEventListener("push", () => {
-  console.log("Service Worker: Pushed");
+self.addEventListener("push", (event) => {
+  /* Kode lainnya disembuyikan */
+});
+self.addEventListener("notificationclick", (event) => {
+  const clickedNotification = event.notification;
+  clickedNotification.close();
+  const chainPromise = async () => {
+    console.log("Notification has been clicked");
+    await self.clients.openWindow("https://www.dicoding.com/");
+  };
+  event.waitUntil(chainPromise());
 });
